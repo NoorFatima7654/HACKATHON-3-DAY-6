@@ -11,7 +11,7 @@ const CartBtn = () => {
 
   return (
     <Link href="/cart" className="relative mr-[14px] p-1">
-      <Image
+      <  Image    
         priority
         src="/icons/cart.svg"
         height={100}

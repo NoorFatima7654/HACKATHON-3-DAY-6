@@ -4,6 +4,10 @@ export type Discount = {
 };
 
 export type Product = {
+  _id: any;
+  description: ReactI18NextChildren | Iterable<ReactI18NextChildren>;
+  image(image: any): unknown;
+  name: string;
   id: number;
   title: string;
   srcUrl: string;

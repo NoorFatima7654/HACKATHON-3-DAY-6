@@ -5,6 +5,7 @@ import Header from "@/components/homepage/Header";
 import Reviews from "@/components/homepage/Reviews";
 import { Product } from "@/types/product.types";
 import { Review } from "@/types/review.types";
+import ProductCards from "./products/page";
 
 
 export const newArrivalsData: Product[] = [
@@ -19,6 +20,12 @@ export const newArrivalsData: Product[] = [
       percentage: 0,
     },
     rating: 4.5,
+    description: undefined,
+    image: function (): unknown {
+      throw new Error("Function not implemented.");
+    },
+    name: "",
+    _id: undefined
   },
   {
     id: 2,
@@ -31,6 +38,12 @@ export const newArrivalsData: Product[] = [
       percentage: 20,
     },
     rating: 3.5,
+    description: undefined,
+    image: function (image: any): unknown {
+      throw new Error("Function not implemented.");
+    },
+    name: "",
+    _id: undefined
   },
   {
     id: 3,
@@ -43,6 +56,12 @@ export const newArrivalsData: Product[] = [
       percentage: 0,
     },
     rating: 4.5,
+    description: undefined,
+    image: function (image: any): unknown {
+      throw new Error("Function not implemented.");
+    },
+    name: "",
+    _id: undefined
   },
   {
     id: 4,
@@ -55,6 +74,12 @@ export const newArrivalsData: Product[] = [
       percentage: 30,
     },
     rating: 4.5,
+    description: undefined,
+    image: function (image: any): unknown {
+      throw new Error("Function not implemented.");
+    },
+    name: "",
+    _id: undefined
   },
 ];
 
@@ -70,6 +95,12 @@ export const topSellingData: Product[] = [
       percentage: 20,
     },
     rating: 5.0,
+    description: undefined,
+    image: function (image: any): unknown {
+      throw new Error("Function not implemented.");
+    },
+    name: "",
+    _id: undefined
   },
   {
     id: 6,
@@ -82,6 +113,12 @@ export const topSellingData: Product[] = [
       percentage: 0,
     },
     rating: 4.0,
+    description: undefined,
+    image: function (image: any): unknown {
+      throw new Error("Function not implemented.");
+    },
+    name: "",
+    _id: undefined
   },
   {
     id: 7,
@@ -94,6 +131,12 @@ export const topSellingData: Product[] = [
       percentage: 0,
     },
     rating: 3.0,
+    description: undefined,
+    image: function (image: any): unknown {
+      throw new Error("Function not implemented.");
+    },
+    name: "",
+    _id: undefined
   },
   {
     id: 8,
@@ -106,6 +149,12 @@ export const topSellingData: Product[] = [
       percentage: 0,
     },
     rating: 4.5,
+    description: undefined,
+    image: function (image: any): unknown {
+      throw new Error("Function not implemented.");
+    },
+    name: "",
+    _id: undefined
   },
 ];
 
@@ -121,6 +170,12 @@ export const relatedProductData: Product[] = [
       percentage: 20,
     },
     rating: 4.0,
+    description: undefined,
+    image: function (image: any): unknown {
+      throw new Error("Function not implemented.");
+    },
+    name: "",
+    _id: undefined
   },
   {
     id: 13,
@@ -133,6 +188,12 @@ export const relatedProductData: Product[] = [
       percentage: 0,
     },
     rating: 3.5,
+    description: undefined,
+    image: function (image: any): unknown {
+      throw new Error("Function not implemented.");
+    },
+    name: "",
+    _id: undefined
   },
   {
     id: 14,
@@ -145,6 +206,12 @@ export const relatedProductData: Product[] = [
       percentage: 0,
     },
     rating: 4.5,
+    description: undefined,
+    image: function (image: any): unknown {
+      throw new Error("Function not implemented.");
+    },
+    name: "",
+    _id: undefined
   },
   {
     id: 15,
@@ -157,6 +224,12 @@ export const relatedProductData: Product[] = [
       percentage: 30,
     },
     rating: 5.0,
+    description: undefined,
+    image: function (image: any): unknown {
+      throw new Error("Function not implemented.");
+    },
+    name: "",
+    _id: undefined
   },
 ];
 
@@ -214,7 +287,10 @@ export default function Home() {
           <DressStyle />
         </div>
         <Reviews data={reviewsData} />
+        <ProductCards/>
       </main>
     </div>
+
   );
 }
+

@@ -82,6 +82,7 @@ const ShopPage: React.FC = () => {
 
             <PaginationNext href="#" className="border border-black/10" />
           </Pagination>
+         
         </div>
       </div>
     </main>
