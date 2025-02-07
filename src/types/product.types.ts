@@ -5,7 +5,7 @@ export type Discount = {
 
 export type Product = {
   _id: any;
-  description: ReactI18NextChildren | Iterable<ReactI18NextChildren>;
+  description?: string,
   image(image: any): unknown;
   name: string;
   id: number;
